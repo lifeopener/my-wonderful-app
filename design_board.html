@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vesper AI Companion - Design Board</title>
+    <style>
+        :root {
+            --bg-color: #050508;
+            --card-bg: #0A0A12;
+            --accent-color: #F5A623;
+            --text-color: #F0F0F0;
+            --text-secondary: #A0A0A0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #F5A623 0%, #FFD200 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+        }
+
+        .design-sheet {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .screen-card {
+            background-color: var(--card-bg);
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(245, 166, 35, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .screen-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(245, 166, 35, 0.4);
+        }
+
+        .screen-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .screen-info {
+            padding: 24px;
+        }
+
+        .screen-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--accent-color);
+        }
+
+        .screen-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        footer {
+            margin-top: 80px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vesper AI Companion</h1>
+        <p>Premium Investment AI Design Board</p>
+    </header>
+
+    <div class="design-sheet">
+        <!-- Splash Screen -->
+        <div class="screen-card">
+            <img src="assets/images/01_splash_screen.png" alt="Splash Screen" class="screen-image">
+            <div class="screen-info">
+                <div class="screen-title">01. Splash Screen</div>
+                <div class="screen-desc">첫인상을 결정하는 브랜드 아이덴티티와 시작 화면</div>
+            </div>
+        </div>
+
+        <!-- Home Screen -->
+        <div class="screen-card">
+            <img src="assets/images/02_home_screen.png" alt="Home Screen" class="screen-image">
+            <div class="screen-info">
+                <div class="screen-title">02. Home Dashboard</div>
+                <div class="screen-desc">내 포트폴리오 요약과 실시간 시장 지표를 담은 메인 허브</div>
+            </div>
+        </div>
+
+        <!-- Chat Screen -->
+        <div class="screen-card">
+            <img src="assets/images/03_chat_screen.png" alt="Chat Screen" class="screen-image">
+            <div class="screen-info">
+                <div class="screen-title">03. Chat Experience</div>
+                <div class="screen-desc">베스퍼와의 실시간 대화 및 투자 조언 화면</div>
+            </div>
+        </div>
+
+        <!-- Persona Screen -->
+        <div class="screen-card">
+            <img src="assets/images/04_persona_screen.png" alt="Persona Screen" class="screen-image">
+            <div class="screen-info">
+                <div class="screen-title">04. Persona Settings</div>
+                <div class="screen-desc">나만의 투자 파트너 커스터마이징 화면</div>
+            </div>
+        </div>
+
+        <!-- Scroll Sections -->
+        <div class="screen-card full-width">
+            <img src="assets/images/05_splash_full_scroll.png" alt="Onboarding Scroll" class="screen-image">
+            <div class="screen-info">
+                <div class="screen-title">05. Full Onboarding Flow</div>
+                <div class="screen-desc">앱의 핵심 기능을 설명하는 상세 온보딩 스크롤 레이아웃</div>
+            </div>
+        </div>
+
+        <div class="screen-card full-width">
+            <img src="assets/images/06_home_full_scroll.png" alt="Dashboard Full Scroll" class="screen-image">
+            <div class="screen-info">
+                <div class="screen-title">06. Deep Dashboard Scroll</div>
+                <div class="screen-desc">차트, 뉴스 피드, 관심 종목이 포함된 전체 대시보드 상세 흐름</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Vesper AI. Designed by Antigravity.
+    </footer>
+</body>
+</html>

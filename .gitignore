@@ -1,0 +1,18 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+
+# IDE
+.vscode
+
+# Sensitive files
+Keys/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
